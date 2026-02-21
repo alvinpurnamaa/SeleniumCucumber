@@ -15,3 +15,19 @@ Framework ini menggunakan:
 - Gradle sebagai build tool
 
 Framework ini menerapkan **Page Object Model (POM)** untuk menjaga struktur kode tetap rapi, modular, dan mudah dirawat.
+
+## 🏗️ Project Structure
+
+project-root
+├── build.gradle
+├── README.md
+└── src
+└── test
+├── java
+│ └── com/alvin
+│ ├── pages
+│ ├── stepdef
+│ └── CucumberTest.java
+└── resources
+└── features
+└── login.feature
