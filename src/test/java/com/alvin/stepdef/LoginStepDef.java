@@ -18,6 +18,7 @@ public class LoginStepDef {
     @Given("user is on login page")
     public void userIsOnLoginPage() {
 
+
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
 
