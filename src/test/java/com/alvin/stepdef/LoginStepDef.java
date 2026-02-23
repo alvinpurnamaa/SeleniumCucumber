@@ -18,7 +18,7 @@ public class LoginStepDef {
     @Given("user is on login page")
     public void userIsOnLoginPage() {
 
-        WebDriverManager.chromedriver().setup();   // <-- WAJIB
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
 
         driver.get("https://www.saucedemo.com/");
