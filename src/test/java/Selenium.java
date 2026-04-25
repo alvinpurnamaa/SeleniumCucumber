@@ -40,7 +40,7 @@ public class Selenium {
 
     @Test
     public void locatorTest () {
-        WebDriver driver = DriverFactory.createDriver();
+        WebDriver driver = DriverFactory.getDriver();
         driver.get("https://www.saucedemo.com/");
 
         driver.findElement(By.cssSelector("input#user-name"));
@@ -50,7 +50,7 @@ public class Selenium {
 
     @Test
     public void browserMethodTest() {
-         WebDriver driver = DriverFactory.createDriver();
+        WebDriver driver = DriverFactory.getDriver();
          driver.get("https://www.saucedemo.com/");
 
          String title = driver.getTitle();
@@ -63,7 +63,7 @@ public class Selenium {
 
     @Test
     public void sauceDemoTest() throws InterruptedException {
-        WebDriver driver = DriverFactory.createDriver();
+        WebDriver driver = DriverFactory.getDriver();
         driver.get("https://www.saucedemo.com/");
 
         driver.findElement(By.cssSelector("input#user-name")).sendKeys("standard_user");
@@ -77,7 +77,7 @@ public class Selenium {
 
     @Test
     public void navigationMethodTest() throws InterruptedException {
-        WebDriver driver = DriverFactory.createDriver();
+        WebDriver driver = DriverFactory.getDriver();
         driver.navigate().to("https://www.saucedemo.com/");
         driver.navigate().refresh();
         driver.navigate().to("https://jayjay.co/");
@@ -94,7 +94,7 @@ public class Selenium {
 
     @Test
     public void sauceDemoImplicitWait()  {
-        WebDriver driver = DriverFactory.createDriver();
+        WebDriver driver = DriverFactory.getDriver();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
 
@@ -107,7 +107,7 @@ public class Selenium {
 
     @Test
     public void sauceDemoExplicitWait()  {
-        WebDriver driver = DriverFactory.createDriver();
+        WebDriver driver = DriverFactory.getDriver();
 
         driver.get("https://www.saucedemo.com/");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -125,7 +125,7 @@ public class Selenium {
 
     @Test
     public void sauceDemoFluentWait()  {
-        WebDriver driver = DriverFactory.createDriver();
+        WebDriver driver = DriverFactory.getDriver();
 
         driver.get("https://www.saucedemo.com/");
 
@@ -148,7 +148,7 @@ public class Selenium {
     @Test
     public void loginTest() {
         // inisialisasi webdriver
-        WebDriver driver = DriverFactory.createDriver();
+        WebDriver driver = DriverFactory.getDriver();
 
         // inisialisasi page object
         LoginPage loginPage = new LoginPage(driver);
