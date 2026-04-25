@@ -29,6 +29,7 @@ project-root
 │ ├── pages
 
 │ ├── stepdef
+
 │ └── CucumberTest.java
 └── resources
 └── features
@@ -36,5 +37,7 @@ project-root
 
 
 **Result**
-<img width="1919" height="731" alt="Screenshot_42" src="https://github.com/user-attachments/assets/90e53edb-31e0-482e-ad05-a4c4c5eb91f2" />
-<img width="1919" height="857" alt="Screenshot_43" src="https://github.com/user-attachments/assets/baef933a-1505-4afa-8e26-8633d61fbc24" />
+<img width="1919" height="975" alt="Screenshot_45" src="https://github.com/user-attachments/assets/d3c05207-b71b-4283-9665-19710a065a8c" />
+<img width="1919" height="873" alt="Screenshot_44" src="https://github.com/user-attachments/assets/a62dd48c-bf19-44ff-9e82-34e2645a3006" />
+
+
