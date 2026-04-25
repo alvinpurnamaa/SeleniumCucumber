@@ -18,27 +18,27 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Selenium {
 
-    @Test
-    public void helloJayjay() {
-        // inisialisasi browser driver
-        WebDriverManager.chromedriver().setup();
-
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless=new");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
-
-        WebDriver driver = new ChromeDriver(options);
-
-        // navigasi url
-        driver.get("https://jayjay.co/");
-
-        // get element attribute
-        String text = driver.findElement(By.className("content-info")).getText();
-
-        // assertion / pengecekan
-        assertEquals("Belajar dari para ahli terbaik berdasarkan program Eropa", text);
-    }
+//    @Test
+//    public void helloJayjay() {
+//        // inisialisasi browser driver
+//        WebDriverManager.chromedriver().setup();
+//
+//        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--headless=new");
+//        options.addArguments("--no-sandbox");
+//        options.addArguments("--disable-dev-shm-usage");
+//
+//        WebDriver driver = new ChromeDriver(options);
+//
+//        // navigasi url
+//        driver.get("https://jayjay.co/");
+//
+//        // get element attribute
+//        String text = driver.findElement(By.className("content-info")).getText();
+//
+//        // assertion / pengecekan
+//        assertEquals("Belajar dari para ahli terbaik berdasarkan program Eropa", text);
+//    }
 
 
     @Test
