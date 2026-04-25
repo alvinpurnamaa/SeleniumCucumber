@@ -1,4 +1,6 @@
 import com.alvin.DriverFactory;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -36,7 +38,15 @@ public class Selenium {
 //        // assertion / pengecekan
 //        assertEquals("Belajar dari para ahli terbaik berdasarkan program Eropa", text);
 //    }
+    @BeforeEach
+    public void setup() {
+     DriverFactory.initDriver();
+    }
 
+    @AfterEach
+    public void tearDown() {
+        DriverFactory.quitDriver();
+    }
 
     @Test
     public void locatorTest () {
