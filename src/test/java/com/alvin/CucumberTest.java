@@ -10,6 +10,7 @@ import static io.cucumber.junit.platform.engine.Constants.*;
 @Suite
 @IncludeEngines("cucumber")
 @SelectClasspathResource("login")
+@SelectClasspathResource("API")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "com.alvin.stepdef")
 @ConfigurationParameter(
         key = PLUGIN_PROPERTY_NAME,
