@@ -26,8 +26,10 @@ jobs:
       run: chmod +x gradlew
 
     - name: Execute Test
-      run: ./gradlew test
+      run: ./gradlew clean test
 
-    
-
-   
+    - name: Upload Cucumber Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: cucumber-report
+        path: target/cucumber-report.html
