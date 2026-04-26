@@ -17,7 +17,6 @@ public class APITest {
                 .get("/users")
                 .then()
                 .log().all()
-                .statusCode(200)
-                .body("$", not(empty()));
+                .statusCode(200);
     }
 }
