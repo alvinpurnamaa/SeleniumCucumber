@@ -1,4 +1,4 @@
 Feature: API Test
 
-  Scenario: Get user API
-    Given user get API user detail
+  Scenario: Get users from gorest
+    Given user get gorest users

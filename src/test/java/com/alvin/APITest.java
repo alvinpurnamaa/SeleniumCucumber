@@ -9,14 +9,15 @@ import static org.hamcrest.Matchers.*;
 public class APITest {
 
     @Test
-    public void getUserTest() {
-        RestAssured.baseURI = "https://reqres.in/api";
+    public void getUsersTest() {
+        RestAssured.baseURI = "https://gorest.co.in/public/v2";
 
         given()
                 .when()
-                .get("/users/2")
+                .get("/users")
                 .then()
+                .log().all()
                 .statusCode(200)
-                .body("data.id", equalTo(2));
+                .body("$", not(empty()));
     }
 }

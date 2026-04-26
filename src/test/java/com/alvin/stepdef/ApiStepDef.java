@@ -6,14 +6,15 @@ import static org.hamcrest.Matchers.*;
 
 public class ApiStepDef {
 
-    @Given("user get API user detail")
-    public void getApiUser() {
+    @Given("user get gorest users")
+    public void getGorestUsers() {
         given()
-                .baseUri("https://reqres.in/api")
+                .baseUri("https://gorest.co.in/public/v2")
                 .when()
-                .get("/users/2")
+                .get("/users")
                 .then()
+                .log().all()
                 .statusCode(200)
-                .body("data.id", equalTo(2));
+                .body("$", not(empty()));
     }
 }
