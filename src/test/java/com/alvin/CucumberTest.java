@@ -11,6 +11,9 @@ import static io.cucumber.junit.platform.engine.Constants.*;
 @IncludeEngines("cucumber")
 @SelectClasspathResource("login")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "com.alvin.stepdef")
-@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, html:target/cucumber-reports.html")
+@ConfigurationParameter(
+        key = PLUGIN_PROPERTY_NAME,
+        value = "pretty,html:target/cucumber-report.html"
+)
 public class CucumberTest {
 }
